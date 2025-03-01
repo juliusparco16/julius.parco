@@ -1,98 +1,31 @@
-
+/* Replace your existing CSS with this */
 :root {
-    --primary-color: #2A2F4F;
-    --secondary-color: #4B527E;
-    --accent-color: #7C81AD;
-    --text-color: #E5E5E5;
+    --max-width: 800px;
 }
 
-body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: #1A1A1A;
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    margin: 4rem 0;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    text-align: center;
-    padding: 3rem 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    padding: 5rem 0 4rem;
+    margin-bottom: 3rem;
 }
 
-.skill-card, .cert-card, .experience-item {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-}
-
-/* Enhanced Styling */
-h1 {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
-}
-
-.tagline {
-    font-size: 1.3rem;
-    opacity: 0.9;
-    margin-bottom: 1.5rem;
-}
-
-.contact-header {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contact-header a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-.skills-grid, .certs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.skill-card, .cert-card {
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-}
-
-.skill-card i {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--accent-color);
+.skills-grid {
+    gap: 2rem;
+    padding: 1rem 0;
 }
 
 .experience-item {
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-}
-
-.company {
-    color: var(--accent-color);
-    font-weight: normal;
-}
-
-.btn {
-    background: var(--accent-color);
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #6C72AD;
+    margin: 2rem 0;
+    padding: 2rem;
 }
