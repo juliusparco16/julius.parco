@@ -1,16 +1,11 @@
 function initThreeJS() {
-    const canvas = document.querySelector('#threejs-canvas');
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
-    
-    // Geometry
-    const geometry = new THREE.IcosahedronGeometry(2, 1);
-    const material = new THREE.MeshPhongMaterial({
+    // Simplified geometry for better performance
+    const geometry = new THREE.TetrahedronGeometry(3, 1);
+    const material = new THREE.MeshBasicMaterial({
         color: 0x64ffda,
         wireframe: true,
-        opacity: 0.3,
-        transparent: true
+        transparent: true,
+        opacity: 0.1
     });
     
     const icosahedron = new THREE.Mesh(geometry, material);
