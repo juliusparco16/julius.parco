@@ -1,107 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julius Parco - Senior Full-Stack Developer</title>
+    <title>Julius Parco | Senior Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    <canvas id="threejs-canvas"></canvas>
-    
     <header class="hero">
-         <h1>Julius Parco</h1>
-        <p class="tagline">Senior Full-Stack Developer | Cloud Migration Specialist</p>
-        <div class="contact-header">
-            <span><i class="fas fa-map-marker-alt"></i> Cambridge, Ontario</span>
-            <a href="tel:+12265074696"><i class="fas fa-phone"></i> +1 (226) 507-4696</a>
-            <a href="mailto:juliusparco@yahoo.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://linkedin.com/in/juliusparco"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <div class="hero-content">
+            <h1>Julius Parco</h1>
+            <p class="title">Senior Full-Stack Developer</p>
+            <div class="contact-bar">
+                <span><i class="fas fa-map-marker-alt"></i> Cambridge, ON</span>
+                <a href="tel:+12265074696"><i class="fas fa-phone"></i> +1 (226) 507-4696</a>
+                <a href="mailto:juliusparco@yahoo.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/juliusparco" target="_blank"><i class="fab fa-linkedin"></i>
+                    LinkedIn</a>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <!-- Technical Skills Visualization -->
-        <section id="skills" class="section">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="skills-chart" id="d3-skills"></div>
+        <!-- Technical Skills -->
+        <section class="skills-section">
+            <h2><i class="fas fa-tools"></i> Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java Ecosystem</h3>
+                    <p>Spring Boot | Hibernate | MVC | Microservices</p>
+                </div>
+                <!-- Add other skill cards -->
+            </div>
         </section>
 
-        <!-- Curated Projects -->
-        <section id="projects" class="section">
-            <h2 class="section-title">Key Achievements</h2>
+        <!-- Professional Experience -->
+        <section class="experience-section">
+            <h2><i class="fas fa-briefcase"></i> Professional Journey</h2>
+            <div class="timeline">
+
+                <!-- Accenture -->
+                <div class="timeline-item">
+                    <div class="company-logo">
+                        <img src="assets/logos/accenture.png" alt="Accenture Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Associate Manager / Technical Lead</h3>
+                        <p class="company">Accenture Inc · Makati, Philippines</p>
+                        <p class="duration">2020 - 2022</p>
+                        <ul>
+                            <li>Led 9 developers in Spring Boot migration projects</li>
+                            <li>20% faster deployments via CI/CD optimization</li>
+                            <li>Achieved 99.9% uptime through cloud architecture improvements</li>
+                            <li>Recipient of Accenture Excellence Award</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Standard Chartered -->
+                <div class="timeline-item">
+                    <div class="company-logo">
+                        <img src="assets/logos/standard-chartered.png" alt="Standard Chartered Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Senior Analyst Programmer</h3>
+                        <p class="company">Standard Chartered Bank · Kuala Lumpur, Malaysia</p>
+                        <p class="duration">2012 - 2019</p>
+                        <ul>
+                            <li>Developed real-time banking systems handling 50k+ daily transactions</li>
+                            <li>Improved database performance by 15% through query optimization</li>
+                            <li>Led Octopus Phase 2 project launch ahead of schedule</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- HP -->
+                <div class="timeline-item">
+                    <div class="company-logo">
+                        <img src="assets/logos/HewlettPackard.png" alt="Hewlett Packard Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Technology Consultant II (Senior Developer)</h3>
+                        <p class="company">Hewlett Packard Asia Pacific · BGC, Philippines </p>
+                        <p class="duration">2012 - 2019</p>
+                        <ul>
+                            <li>Led development for Elders Australia's Salesplus Web Application using Java, Spring, and
+                                Ruby on Rails</li>
+                            <li>Developed web applications using MVC architecture, enhancing system functionalities and
+                                user experience.</li>
+                            <li>Collaborated with global teams to deliver projects on time and within budget.</li>
+                            <li>Integrated RESTful APIs, facilitating seamless communication between systems.</li>
+                            <li>Utilized cloud services, deploying applications on AWS and OCI, optimizing cloud
+                                resources.</li>
+
+
+                            <li>Improved database performance by 15% through query optimization</li>
+                            <li>Led Octopus Phase 2 project launch ahead of schedule</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Add BDO, Toyota following same pattern -->
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-section">
+            <h2><i class="fas fa-code-branch"></i> Key Projects</h2>
             <div class="projects-grid">
+
+                <!-- Cloud Migration -->
                 <div class="project-card">
-                    <img src="assets/projects/cloud-migration.jpg" alt="Cloud Migration">
-                    <div class="project-content">
+                    <img src="assets/projects/cloud-migration.jpg" alt="Cloud Architecture">
+                    <div class="project-info">
                         <h3>Legacy System Modernization</h3>
                         <div class="tech-stack">
                             <span>Java</span>
                             <span>Spring Boot</span>
                             <span>AWS</span>
+                            <span>Docker</span>
                         </div>
-                        <p>Led migration of 15+ legacy applications to cloud-native architecture, reducing infra costs by 35%</p>
-                        <a href="#experience" class="btn">View Details</a>
+                        <p>Migrated 15+ legacy applications to cloud-native architecture with 35% cost reduction</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>20% Faster Load Times</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-uptime"></i>
+                                <span>99.9% Uptime</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add other curated projects -->
+
+                <!-- Banking System -->
+                <div class="project-card">
+                    <img src="assets/projects/banking-system.jpg" alt="Banking Platform">
+                    <div class="project-info">
+                        <h3>Real-Time Online Banking</h3>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring MVC</span>
+                            <span>Oracle DB</span>
+                        </div>
+                        <p>Developed high-performance banking platform supporting 30% user growth</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <i class="fas fa-users"></i>
+                                <span>500k+ Users</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>PCI-DSS Compliant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Education Projects -->
+                <div class="project-card">
+                    <img src="assets/projects/student-system.jpg" alt="Student Management">
+                    <div class="project-info">
+                        <h3>Secure Student Management</h3>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Oracle</span>
+                        </div>
+                        <p>Academic project with role-based access control and audit logging</p>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <!-- Experience Timeline -->
-        <section id="experience" class="section">
-            <h2><i class="fas fa-building"></i> Professional Experience</h2>
-        <div class="experience-item">
-            <h3>Associate Manager / Technical Lead <span class="company">@ Accenture</span></h3>
-            <p class="timeline">2020 – 2022</p>
-            <ul>
-                <li><i class="fas fa-caret-right"></i> Led 9 developers in Spring Boot migration projects</li>
-                <li><i class="fas fa-caret-right"></i> 20% faster deployments via CI/CD pipelines</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h3>Senior Analyst Programmer <span class="company">@ Standard Chartered Bank</span></h3>
-            <p class="timeline">2012 – 2019</p>
-            <ul>
-                <li><i class="fas fa-caret-right"></i> Developed real-time banking systems with 30% user growth</li>
-                <li><i class="fas fa-caret-right"></i> Oracle Cloud Infrastructure deployment</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h3>Technology Consultant <span class="company">@ Hewlett Packard</span></h3>
-            <p class="timeline">2011 – 2012</p>
-            <ul>
-                <li><i class="fas fa-caret-right"></i> Led Salesplus Web App development with Ruby on Rails</li>
-            </ul>
-        </div>
-        </section>
-
-        <!-- Contact Form -->
-        <section id="contact" class="section">
-            <h2 class="section-title">Get in Touch</h2>
-            <form name="contact" netlify class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="How can I help?" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
         </section>
     </main>
 
-    <!-- Theme Toggle -->
-    <div class="theme-toggle">
-        <button id="themeBtn"><i class="fas fa-moon"></i></button>
-    </div>
-
-    <!-- Loading Spinner -->
-    <div class="loader">
-        <div class="spinner"></div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="threejs.js"></script>
+    <script src="three/three.min.js"></script>
+    <script src="three/three-config.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

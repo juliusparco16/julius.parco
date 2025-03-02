@@ -1,46 +1,22 @@
-// Theme Toggle
-const themeBtn = document.getElementById('themeBtn');
-themeBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    themeBtn.innerHTML = newTheme === 'dark' ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-});
-
-// Skills Radar Chart
-const skillsData = [
-    { skill: 'Java/Spring', level: 95 },
-    { skill: 'Cloud Migration', level: 90 },
-    { skill: 'CI/CD', level: 85 },
-    { skill: 'SQL', level: 88 },
-    { skill: 'ReactJS', level: 75 }
-];
-
-const radarConfig = {
-    width: 800,
-    height: 500,
-    levels: 5,
-    maxValue: 100
-};
-
-// D3 Radar Chart Implementation
-function drawRadar() {
-    // Detailed D3 implementation here
-}
-
-// Loading State
-window.addEventListener('load', () => {
-    document.querySelector('.loader').style.opacity = '0';
-    setTimeout(() => {
-        document.querySelector('.loader').style.display = 'none';
-    }, 300);
-});
-
-// Netlify Form Handling
-if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-        if (!user) window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
     });
-}
+});
+
+// Intersection Observer for animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.skill-card, .project-card').forEach((el) => {
+    observer.observe(el);
+});
