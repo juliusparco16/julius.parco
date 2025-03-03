@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <canvas id="codeCanvas"></canvas>
     <header class="hero">
         <div class="hero-content">
             <h1>Julius Parco</h1>
@@ -30,11 +31,40 @@
             <h2><i class="fas fa-tools"></i> Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fab fa-java"></i>
-                    <h3>Java Ecosystem</h3>
-                    <p>Spring Boot | Hibernate | MVC | Microservices</p>
+                    <i class="fas fa-code"></i>
+                    <h3>Programming Languages</h3>
+                    <p>Java | Python | JavaScript | Groovy | Ruby</p>
                 </div>
-                <!-- Add other skill cards -->
+                <div class="skill-card">
+                    <i class="fas fa-cubes"></i>
+                    <h3>Frameworks & Libraries</h3>
+                    <p>Spring Boot | Spring MVC | Hibernate | Ruby on Rails | Django | Node.js | ReactJS | jQuery</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Technologies</h3>
+                    <p>HTML | CSS | JavaScript | Tomcat</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>SQL (PostgreSQL, Oracle) | NoSQL | JDBC</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS | Oracle Cloud Infrastructure (OCI) | GCP</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>DevOps & Tools</h3>
+                    <p>CI/CD Pipelines | Jenkins | Git | Docker | AWS CodeBuild</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Other Skills</h3>
+                    <p>MVC Architecture | Microservices | RESTful APIs | Troubleshooting</p>
+                </div>
             </div>
         </section>
 
@@ -43,7 +73,6 @@
             <h2><i class="fas fa-briefcase"></i> Professional Journey</h2>
             <div class="timeline">
 
-                <!-- Accenture -->
                 <div class="timeline-item">
                     <div class="company-logo">
                         <img src="assets/logos/accenture.png" alt="Accenture Logo">
@@ -51,7 +80,7 @@
                     <div class="timeline-content">
                         <h3>Associate Manager / Technical Lead</h3>
                         <p class="company">Accenture Inc · Makati, Philippines</p>
-                        <p class="duration">2020 - 2022</p>
+                        <p class="duration">Apr 2020 – Dec 2022</p>
                         <ul>
                             <li>Led 9 developers in Spring Boot migration projects</li>
                             <li>20% faster deployments via CI/CD optimization</li>
@@ -61,7 +90,6 @@
                     </div>
                 </div>
 
-                <!-- Standard Chartered -->
                 <div class="timeline-item">
                     <div class="company-logo">
                         <img src="assets/logos/standard-chartered.png" alt="Standard Chartered Logo">
@@ -69,7 +97,7 @@
                     <div class="timeline-content">
                         <h3>Senior Analyst Programmer</h3>
                         <p class="company">Standard Chartered Bank · Kuala Lumpur, Malaysia</p>
-                        <p class="duration">2012 - 2019</p>
+                        <p class="duration">Jul 2012 – Sep 2019</p>
                         <ul>
                             <li>Developed real-time banking systems handling 50k+ daily transactions</li>
                             <li>Improved database performance by 15% through query optimization</li>
@@ -78,34 +106,54 @@
                     </div>
                 </div>
 
-
-                <!-- HP -->
                 <div class="timeline-item">
                     <div class="company-logo">
-                        <img src="assets/logos/HewlettPackard.png" alt="Hewlett Packard Logo">
+                        <img src="assets/logos/hewlett-packard.png" alt="Hewlett Packard Logo">
                     </div>
                     <div class="timeline-content">
                         <h3>Technology Consultant II (Senior Developer)</h3>
-                        <p class="company">Hewlett Packard Asia Pacific · BGC, Philippines </p>
-                        <p class="duration">2012 - 2019</p>
+                        <p class="company">Hewlett Packard Asia Pacific Ltd. · Bonifacio Global City, Philippines</p>
+                        <p class="duration">Apr 2011 – Jun 2012</p>
                         <ul>
-                            <li>Led development for Elders Australia's Salesplus Web Application using Java, Spring, and
-                                Ruby on Rails</li>
-                            <li>Developed web applications using MVC architecture, enhancing system functionalities and
-                                user experience.</li>
-                            <li>Collaborated with global teams to deliver projects on time and within budget.</li>
-                            <li>Integrated RESTful APIs, facilitating seamless communication between systems.</li>
-                            <li>Utilized cloud services, deploying applications on AWS and OCI, optimizing cloud
-                                resources.</li>
-
-
-                            <li>Improved database performance by 15% through query optimization</li>
-                            <li>Led Octopus Phase 2 project launch ahead of schedule</li>
+                            <li>Led development for Elders Australia's Salesplus Web Application using Java, Spring, and Ruby on Rails.</li>
+                            <li>Developed web applications using MVC architecture.</li>
+                            <li>Integrated RESTful APIs for seamless system communication.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Add BDO, Toyota following same pattern -->
+                <div class="timeline-item">
+                    <div class="company-logo">
+                        <img src="assets/logos/bdo.png" alt="BDO Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Analyst Programmer</h3>
+                        <p class="company">BDO – Banco de Oro Universal Bank · Manila, Philippines</p>
+                        <p class="duration">Feb 2007 – Apr 2011</p>
+                        <ul>
+                            <li>Supported and developed Corporate Internet Banking applications using Java, Spring, and Oracle.</li>
+                            <li>Developed various systems and utilities, improving operational efficiency by 15%.</li>
+                            <li>Worked with business units to gather requirements and implement tailored solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="company-logo">
+                        <img src="assets/logos/toyota.png" alt="Toyota Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <p class="company">Toyota Motor Manufacturing Canada · Cambridge, Ontario, Canada</p>
+                        <p class="duration">Feb 2024 – Present</p>
+                        <ul>
+                            <li>Collaborated to optimize production schedules.</li>
+                            <li>Conducted equipment inspections for operational efficiency.</li>
+                            <li>Contributed to process improvements.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -181,8 +229,8 @@
         </section>
     </main>
 
-    <script src="three/three.min.js"></script>
-    <script src="three/three-config.js"></script>
+    <!-- <script src="three/three.min.js"></script>
+    <script src="three/three-config.js"></script> -->
     <script src="script.js"></script>
 </body>
 

@@ -8,7 +8,8 @@
 :root {
     --primary-color: #2A2F4F;
     --secondary-color: #4B527E;
-    --accent-color: #7C81AD;
+    /*--accent-color: #7C81AD;*/
+    --accent-color: #64ffda;
     --text-color: #F4F4F4;
     --section-bg: #1A1A1A;
 }
@@ -113,13 +114,16 @@ body {
 }
 
 
-/* Ensure 3D canvas covers full screen behind content */
-canvas {
-    position: fixed !important;
+/* --- 2D Code Stream Canvas Styling --- */
+#codeCanvas {
+    position: fixed; /* Fixed position to stay behind content */
     top: 0;
     left: 0;
-    z-index: -1;
-    opacity: 0.15;
+    width: 100%;
+    height: 100%;
+    z-index: -1;      /* Place behind other content */
+    opacity: 0.15;   /* Adjust opacity for subtle effect */
+    pointer-events: none; /* Make it non-interactive */
 }
 
 /* Make sure HTML content has transparent background */
@@ -174,4 +178,27 @@ body::before {
 
 .metric i {
     color: var(--accent-color);
+}
+
+/* --- Spacing & Hierarchy Enhancements --- */
+
+.container {
+    padding: 3rem 2rem; /* Increased vertical padding for main content */
+}
+
+.section-bg {
+    padding: 3rem 0; /* Increased vertical padding for sections */
+}
+
+.experience-section .timeline-content {
+    padding-bottom: 1.5rem; /* Added padding below timeline content */
+}
+
+.experience-section h3 {
+    margin-bottom: 0.75rem; /* Slightly more space below job titles */
+}
+
+h2 {
+    font-size: 2rem; /* Slightly larger section titles */
+    margin-bottom: 1.5rem; /* More space below section titles */
 }
