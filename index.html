@@ -4,234 +4,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julius Parco | Senior Full-Stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Julius Parco | Senior Microservices Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <canvas id="codeCanvas"></canvas>
+    <canvas id="constellationCanvas"></canvas>
+
     <header class="hero">
         <div class="hero-content">
             <h1>Julius Parco</h1>
-            <p class="title">Senior Full-Stack Developer</p>
+            <p class="title">Senior Microservices Developer</p>
+            <p class="subtitle">Java | Spring Boot | Kafka | GCP | OCI</p>
             <div class="contact-bar">
-                <span><i class="fas fa-map-marker-alt"></i> Cambridge, ON</span>
-                <a href="tel:+12265074696"><i class="fas fa-phone"></i> +1 (226) 507-4696</a>
+                <span><i class="fas fa-map-marker-alt"></i> Cambridge, ON, Canada</span>
                 <a href="mailto:juliusparco@yahoo.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://linkedin.com/in/juliusparco" target="_blank"><i class="fab fa-linkedin"></i>
-                    LinkedIn</a>
+                <a href="https://linkedin.com/in/juliusparco" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/juliusparco16" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <!-- Technical Skills -->
-        <section class="skills-section">
+
+        <section id="about" class="about-section fade-in">
+             <h2><i class="fas fa-user-circle"></i> About Me</h2>
+             <div class="about-content">
+                <div>
+                    <p>
+                        Senior Microservices Developer with <strong>15+ years</strong> of experience designing cloud-native APIs and integration solutions for enterprise systems.
+                    </p>
+                    <p>
+                        Expertise in <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Kafka</strong>, and <strong>Python</strong>, with hands-on experience in <strong>AWS</strong>, <strong>OCI</strong>, and foundational knowledge of <strong>GCP</strong>. Proven track record in financial services and insurance-adjacent domains, delivering scalable microservices architectures and event-driven systems.
+                    </p>
+                     <p>
+                        Adept at Agile practices (Scrum, Kanban) and fostering cross-functional collaboration to achieve project goals. Currently based in Cambridge, Ontario and a Permanent Resident of Canada.
+                    </p>
+                </div>
+             </div>
+        </section>
+
+        <section id="skills" class="skills-section fade-in">
             <h2><i class="fas fa-tools"></i> Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Programming Languages</h3>
-                    <p>Java | Python | JavaScript | Groovy | Ruby</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cubes"></i>
-                    <h3>Frameworks & Libraries</h3>
-                    <p>Spring Boot | Spring MVC | Hibernate | Ruby on Rails | Django | Node.js | ReactJS | jQuery</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Web Technologies</h3>
-                    <p>HTML | CSS | JavaScript | Tomcat</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                    <p>SQL (PostgreSQL, Oracle) | NoSQL | JDBC</p>
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Java | Spring Boot | Spring Data JPA | Hibernate | REST APIs | GraphQL APIs | Microservices</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-cloud"></i>
                     <h3>Cloud Platforms</h3>
-                    <p>AWS | Oracle Cloud Infrastructure (OCI) | GCP</p>
+                    <p>AWS (EC2, S3, Lambda) | OCI (Compute, Storage, Networking) | GCP (Foundational)</p>
+                </div>
+                 <div class="skill-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Event-Driven Tools</h3>
+                    <p>Apache Kafka (Basic) | RabbitMQ</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL | Oracle | MySQL | Data Modeling | Query Optimization</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-terminal"></i>
                     <h3>DevOps & Tools</h3>
-                    <p>CI/CD Pipelines | Jenkins | Git | Docker | AWS CodeBuild</p>
+                    <p>CI/CD | Jenkins | AWS CodeBuild | Docker | Kubernetes (Basic) | Git</p>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Other Skills</h3>
-                    <p>MVC Architecture | Microservices | RESTful APIs | Troubleshooting</p>
+                     <i class="fas fa-vial"></i>
+                     <h3>Testing</h3>
+                     <p>JUnit | Mockito | TDD | BDD (Cucumber)</p>
                 </div>
+                 <div class="skill-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Financial Systems</h3>
+                    <p>PCI-DSS Compliance | Wealth Management Tools | Transaction Processing</p>
+                </div>
+                 <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Other Languages</h3>
+                    <p>Python | Groovy | Ruby | JavaScript (ReactJS, jQuery)</p> </div>
             </div>
         </section>
 
-        <!-- Professional Experience -->
-        <section class="experience-section">
+        <section id="experience" class="experience-section fade-in">
             <h2><i class="fas fa-briefcase"></i> Professional Journey</h2>
             <div class="timeline">
 
-                <div class="timeline-item">
+                 <div class="timeline-item">
                     <div class="company-logo">
-                        <img src="assets/logos/accenture.png" alt="Accenture Logo">
+                         <img src="https://placehold.co/80x80/FFFFFF/CCCCCC?text=Accenture" alt="Accenture Logo">
                     </div>
                     <div class="timeline-content">
-                        <h3>Associate Manager / Technical Lead</h3>
-                        <p class="company">Accenture Inc · Makati, Philippines</p>
+                        <h3>Associate Manager / Technical Lead - Full-Stack Developer</h3>
+                        <p class="company">Accenture Inc · Taguig, Philippines</p>
                         <p class="duration">Apr 2020 – Dec 2022</p>
                         <ul>
-                            <li>Led 9 developers in Spring Boot migration projects</li>
-                            <li>20% faster deployments via CI/CD optimization</li>
-                            <li>Achieved 99.9% uptime through cloud architecture improvements</li>
-                            <li>Recipient of Accenture Excellence Award</li>
+                            <li>Built <strong>event-driven microservices</strong> using <strong>Spring Boot</strong> and <strong>Kafka</strong> for real-time transaction processing, reducing latency by <strong>25%</strong>.</li>
+                            <li>Deployed secure banking APIs on <strong>AWS EC2</strong> and <strong>S3</strong>, achieving <strong>99.9% uptime</strong> through CI/CD pipelines (<strong>Jenkins</strong>).</li>
+                            <li>Mentored <strong>5 junior developers</strong> on code reviews and Spring Boot best practices, improving code quality by <strong>30%</strong>.</li>
+                            <li>Designed <strong>data models</strong> for high-volume financial systems, optimizing <strong>PostgreSQL</strong> query performance by <strong>20%</strong>.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item scb-item scb-first">
                     <div class="company-logo">
-                        <img src="assets/logos/standard-chartered.png" alt="Standard Chartered Logo">
+                        <img src="https://placehold.co/80x80/FFFFFF/CCCCCC?text=SCB" alt="Standard Chartered Logo">
                     </div>
                     <div class="timeline-content">
                         <h3>Senior Analyst Programmer</h3>
-                        <p class="company">Standard Chartered Bank · Kuala Lumpur, Malaysia</p>
+                        <p class="company">Standard Chartered Bank - Scope International · Kuala Lumpur, Malaysia</p>
                         <p class="duration">Jul 2012 – Sep 2019</p>
-                        <ul>
-                            <li>Developed real-time banking systems handling 50k+ daily transactions</li>
-                            <li>Improved database performance by 15% through query optimization</li>
-                            <li>Led Octopus Phase 2 project launch ahead of schedule</li>
+                         <ul>
+                            <li>Developed <strong>REST APIs</strong> for real-time banking systems using <strong>Java/Spring</strong>, handling <strong>5,000+ daily transactions</strong> with <strong>PCI-DSS</strong> compliance.</li>
+                            <li>Optimized <strong>SQL queries</strong> for <strong>Oracle</strong> databases, cutting report generation time by <strong>15%</strong>.</li>
+                            <li>Collaborated with QA teams to implement <strong>BDD frameworks</strong> (Cucumber), reducing post-deployment bugs by <strong>40%</strong>.</li>
                         </ul>
                     </div>
                 </div>
 
+                 <div class="timeline-item scb-item">
+                    <div class="timeline-content">
+                        <h3>Senior Support Analyst (Wealth Management)</h3>
+                        <p class="company">Standard Chartered Bank · Kuala Lumpur, Malaysia</p>
+                        <p class="duration">Jan 2015 – Jun 2016</p>
+                         <ul>
+                            <li>Provided <strong>Tier 2 technical support</strong> for <strong>wealth management platforms</strong> (transaction processing, portfolio tracking, client reporting).</li>
+                            <li>Collaborated with Java developers to debug and escalate system issues, reducing resolution time by <strong>20%</strong>.</li>
+                            <li>Documented and communicated technical requirements to engineering teams for system enhancements.</li>
+                            <li>Trained end-users on platform features, improving adoption rates by <strong>15%</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="timeline-item scb-item">
+                     <div class="timeline-content">
+                        <h3>Analyst Programmer</h3>
+                        <p class="company">Standard Chartered Bank · Kuala Lumpur, Malaysia</p>
+                        <p class="duration">Jun 2012 – Jan 2015</p>
+                         <ul>
+                            <li>Supported <strong>Corporate Internet Banking</strong> applications, ensuring compliance with banking regulations and security standards.</li>
+                            <li>Developed utilities using <strong>Java</strong> to automate payment processing, reducing manual effort by <strong>25%</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
                 <div class="timeline-item">
                     <div class="company-logo">
-                        <img src="assets/logos/hewlett-packard.png" alt="Hewlett Packard Logo">
+                         <img src="https://placehold.co/80x80/FFFFFF/CCCCCC?text=HP" alt="Hewlett Packard Logo">
                     </div>
                     <div class="timeline-content">
                         <h3>Technology Consultant II (Senior Developer)</h3>
                         <p class="company">Hewlett Packard Asia Pacific Ltd. · Bonifacio Global City, Philippines</p>
                         <p class="duration">Apr 2011 – Jun 2012</p>
                         <ul>
-                            <li>Led development for Elders Australia's Salesplus Web Application using Java, Spring, and Ruby on Rails.</li>
-                            <li>Developed web applications using MVC architecture.</li>
-                            <li>Integrated RESTful APIs for seamless system communication.</li>
+                            <li>Led development for Elders Australia's Salesplus Web Application utilizing <strong>Java, Spring, Hibernate,</strong> and <strong>Ruby on Rails</strong>.</li>
+                            <li>Developed web applications using <strong>MVC architecture</strong>, enhancing system functionalities and user experience.</li>
+                            <li>Collaborated with global teams to deliver projects on time and within budget.</li>
+                            <li>Integrated <strong>RESTful APIs</strong>, facilitating seamless communication between systems.</li>
+                             <li>Utilized cloud services, deploying applications on <strong>AWS</strong> and <strong>OCI</strong>, optimizing cloud resources.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="company-logo">
-                        <img src="assets/logos/bdo.png" alt="BDO Logo">
+                         <img src="https://placehold.co/80x80/FFFFFF/CCCCCC?text=BDO" alt="BDO Logo">
                     </div>
                     <div class="timeline-content">
                         <h3>Analyst Programmer</h3>
                         <p class="company">BDO – Banco de Oro Universal Bank · Manila, Philippines</p>
                         <p class="duration">Feb 2007 – Apr 2011</p>
                         <ul>
-                            <li>Supported and developed Corporate Internet Banking applications using Java, Spring, and Oracle.</li>
-                            <li>Developed various systems and utilities, improving operational efficiency by 15%.</li>
+                            <li>Supported and developed Corporate Internet Banking applications using <strong>Java, Spring MVC,</strong> and <strong>Oracle</strong> databases.</li>
+                            <li>Developed various internal systems and utilities, improving operational efficiency by <strong>15%</strong>.</li>
                             <li>Worked with business units to gather requirements and implement tailored solutions.</li>
+                            <li>Ensured compliance with banking regulations and security standards.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                 <div class="timeline-item">
                     <div class="company-logo">
-                        <img src="assets/logos/toyota.png" alt="Toyota Logo">
+                        <img src="https://placehold.co/80x80/FFFFFF/CCCCCC?text=Toyota" alt="Toyota Logo">
                     </div>
                     <div class="timeline-content">
-                        <h3>Full Stack Developer</h3>
+                        <h3>PC Ops</h3>
                         <p class="company">Toyota Motor Manufacturing Canada · Cambridge, Ontario, Canada</p>
                         <p class="duration">Feb 2024 – Present</p>
                         <ul>
-                            <li>Collaborated to optimize production schedules.</li>
-                            <li>Conducted equipment inspections for operational efficiency.</li>
-                            <li>Contributed to process improvements.</li>
-                        </ul>
+                            <li>Contributed to process optimization and cross-functional collaboration in a manufacturing environment.</li>
+                            </ul>
                     </div>
                 </div>
 
-            </div>
-        </section>
 
-        <!-- Projects -->
-        <section class="projects-section">
+            </div> </section>
+
+        <section id="projects" class="projects-section fade-in">
             <h2><i class="fas fa-code-branch"></i> Key Projects</h2>
             <div class="projects-grid">
 
-                <!-- Cloud Migration -->
                 <div class="project-card">
-                    <img src="assets/projects/cloud-migration.jpg" alt="Cloud Architecture">
+                     <img src="https://placehold.co/600x400/0a192f/64ffda?text=Event-Driven+Microservices" alt="Microservices Architecture">
                     <div class="project-info">
-                        <h3>Legacy System Modernization</h3>
+                        <h3>Event-Driven Microservices (Accenture)</h3>
+                        <p>Designed and built event-driven microservices for real-time financial transaction processing, significantly reducing processing latency.</p>
                         <div class="tech-stack">
                             <span>Java</span>
                             <span>Spring Boot</span>
+                            <span>Kafka</span>
+                            <span>Microservices</span>
                             <span>AWS</span>
-                            <span>Docker</span>
+                            <span>PostgreSQL</span>
                         </div>
-                        <p>Migrated 15+ legacy applications to cloud-native architecture with 35% cost reduction</p>
+                        <ul class="project-details">
+                            <li>Implemented Kafka producers and consumers for asynchronous communication.</li>
+                            <li>Designed RESTful APIs for service interaction.</li>
+                            <li>Optimized data models and queries for high-volume processing.</li>
+                        </ul>
                         <div class="project-metrics">
-                            <div class="metric">
-                                <i class="fas fa-tachometer-alt"></i>
-                                <span>20% Faster Load Times</span>
-                            </div>
-                            <div class="metric">
-                                <i class="fas fa-uptime"></i>
-                                <span>99.9% Uptime</span>
-                            </div>
+                            <div class="metric"><i class="fas fa-bolt"></i><span>25% Latency Reduction</span></div>
+                            <div class="metric"><i class="fas fa-server"></i><span>99.9% Uptime</span></div>
                         </div>
-                    </div>
+                         </div>
                 </div>
 
-                <!-- Banking System -->
                 <div class="project-card">
-                    <img src="assets/projects/banking-system.jpg" alt="Banking Platform">
+                     <img src="https://placehold.co/600x400/112240/64ffda?text=Banking+APIs" alt="API Diagram">
                     <div class="project-info">
-                        <h3>Real-Time Online Banking</h3>
+                        <h3>Real-Time Banking APIs (SCB)</h3>
+                        <p>Developed and maintained secure REST APIs for core banking functionalities, ensuring high availability and compliance for thousands of daily transactions.</p>
                         <div class="tech-stack">
                             <span>Java</span>
                             <span>Spring MVC</span>
+                            <span>REST APIs</span>
                             <span>Oracle DB</span>
+                            <span>SQL</span>
+                            <span>PCI-DSS</span>
                         </div>
-                        <p>Developed high-performance banking platform supporting 30% user growth</p>
+                        <ul class="project-details">
+                            <li>Implemented API endpoints for various banking operations.</li>
+                            <li>Ensured code quality and security compliance (PCI-DSS).</li>
+                            <li>Collaborated on BDD testing implementation (Cucumber).</li>
+                        </ul>
                         <div class="project-metrics">
-                            <div class="metric">
-                                <i class="fas fa-users"></i>
-                                <span>500k+ Users</span>
-                            </div>
-                            <div class="metric">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>PCI-DSS Compliant</span>
-                            </div>
+                             <div class="metric"><i class="fas fa-exchange-alt"></i><span>5k+ Daily Transactions</span></div>
+                             <div class="metric"><i class="fas fa-bug"></i><span>40% Bug Reduction (BDD)</span></div>
                         </div>
-                    </div>
+                         </div>
                 </div>
 
-                <!-- Add Education Projects -->
                 <div class="project-card">
-                    <img src="assets/projects/student-system.jpg" alt="Student Management">
+                     <img src="https://placehold.co/600x400/233554/64ffda?text=Student+System" alt="Student Management System UI">
                     <div class="project-info">
-                        <h3>Secure Student Management</h3>
+                        <h3>Secure Student Management System (College Project)</h3>
+                        <p>Developed a web application featuring role-based access control and secure data handling as part of the Conestoga College program.</p>
                         <div class="tech-stack">
                             <span>Python</span>
                             <span>Flask</span>
-                            <span>Oracle</span>
+                            <span>Oracle DB</span>
+                            <span>SQL</span>
+                            <span>HTML/CSS</span>
                         </div>
-                        <p>Academic project with role-based access control and audit logging</p>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                         <ul class="project-details">
+                            <li>Implemented user authentication and authorization.</li>
+                            <li>Designed database schema and essential security features.</li>
+                            <li>Gained practical experience with web frameworks and database interaction.</li>
+                        </ul>
+                         <a href="https://github.com/juliusparco16/YOUR-REPO-NAME" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Code on GitHub</a>
                     </div>
                 </div>
+
+                 <div class="project-card">
+                     <img src="https://placehold.co/600x400/0a192f/8892b0?text=Data+Warehouse" alt="Data Warehouse Schema">
+                    <div class="project-info">
+                        <h3>E-commerce Data Warehouse Design (College Project)</h3>
+                        <p>Designed a data warehouse schema for an e-commerce platform to optimize data analysis and reporting capabilities, enhancing operational efficiency insights.</p>
+                        <div class="tech-stack">
+                            <span>Data Modeling</span>
+                            <span>SQL</span>
+                            <span>ETL Concepts</span>
+                            <span>Database Design</span>
+                        </div>
+                         <ul class="project-details">
+                             <li>Designed star/snowflake schemas for analytical queries.</li>
+                             <li>Defined ETL processes for data loading.</li>
+                             <li>Focused on improving data accessibility for business intelligence.</li>
+                        </ul>
+                         </div>
+                </div>
+
+
+            </div> </section>
+
+         <section id="education" class="education-section fade-in">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="education-item">
+                <h3>Ontario College Graduate Certificate in Reporting Systems and Database Development</h3>
+                <p class="institution">Conestoga College, Kitchener, Ontario, Canada</p>
+                <p class="duration">Jan 2023 – Sep 2023</p>
+                <p><strong>Status:</strong> Graduated with Distinction (Average: 85%)</p>
+                <ul>
+                    <li><strong>Key Project:</strong> Secure Student Management System (Python/Flask, Oracle DB)</li>
+                    <li><strong>Key Project:</strong> E-commerce Data Warehouse Design</li>
+                </ul>
+            </div>
+             <div class="education-item">
+                 <h3>Bachelor of Science in Information Technology (or relevant degree)</h3>
+                <p class="institution">Polytechnic University of the Philippines, Sta. Mesa Manila</p>
+                <p class="duration">Jun 2000 – Apr 2004</p>
+                <p><strong>Status:</strong> Graduated with high academic honors</p>
             </div>
         </section>
+
+        <section id="certifications" class="certifications-section fade-in">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+             <div class="certification-item">
+                 <h3>Oracle Cloud Platform Application Development 2021 Certified Specialist</h3>
+                 <p class="issuer">Oracle</p>
+                 <p class="cert-id">Exam: 1Z0-1071-21</p>
+             </div>
+              <div class="certification-item">
+                 <h3>Oracle Cloud Platform Application Development Specialist</h3>
+                 <p class="issuer">Oracle</p>
+                 <p class="cert-id">Exam: 1Z0-1043-20 | Reg no. 393513783</p>
+             </div>
+             <div class="certification-item">
+                 <h3>Oracle Cloud Infrastructure 2022 Certified Foundations Associate</h3>
+                 <p class="issuer">Oracle</p>
+                 <p class="cert-id">Exam: 1Z0-085-22</p> </div>
+             <div class="certification-item">
+                 <h3>Oracle Cloud Infrastructure Foundations</h3>
+                 <p class="issuer">Oracle</p>
+                 <p class="cert-id">Exam: 1Z0-1085-21 | Reg no. 404768775</p>
+             </div>
+             <div class="certification-item">
+                 <h3>ITIL V3 Foundation Examination Certificate</h3>
+                 <p class="issuer">ITIL</p>
+                 <p class="cert-id">License: 100359976</p>
+             </div>
+        </section>
+
+
     </main>
 
-    <!-- <script src="three/three.min.js"></script>
-    <script src="three/three-config.js"></script> -->
-    <script src="script.js"></script>
-</body>
+    <footer class="footer">
+        <p>&copy; 2025 Julius Parco. All rights reserved.</p>
+        <div class="footer-links">
+             <a href="https://linkedin.com/in/juliusparco" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+             <a href="https://github.com/juliusparco16" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
+
+</body>
 </html>
